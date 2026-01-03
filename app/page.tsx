@@ -122,7 +122,7 @@ export default function Home() {
             </p>
 
             <label className="text-gray-300 text-xl mt-10 block">
-              Enter your OTP
+              Enter your OTP sent to you
             </label>
 
             <input

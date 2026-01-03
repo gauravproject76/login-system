@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+:root {
+  /* Backgrounds */
+  --bg-primary: #0f172a;      /* main background */
+  --bg-secondary: #1e293b;    /* cards, sections */
+  --bg-tertiary: #020617;     /* navbar / footer */
+
+  /* Text */
+  --text-primary: #f8fafc;    /* main text */
+  --text-secondary: #cbd5e1;  /* muted text */
+  --text-disabled: #64748b;
+
+  /* Borders & Dividers */
+  --border-color: #334155;
+
+  /* Brand / Accent */
+  --accent-primary: #38bdf8;  /* blue */
+  --accent-secondary: #22c55e;/* green */
+  --accent-warning: #facc15; /* yellow */
+  --accent-danger: #ef4444;  /* red */
+
+  /* Buttons */
+  --btn-bg: #2563eb;
+  --btn-text: #ffffff;
+  --btn-hover: #1d4ed8;
+
+  /* Inputs */
+  --input-bg: #020617;
+  --input-border: #334155;
+  --input-text: #f8fafc;
+
+  /* Shadows */
+  --shadow-soft: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+.icon-btn {
+  @apply p-2 rounded-full bg-white/10 border border-white/20
+         hover:bg-blue-500/20 hover:text-blue-400
+         transition-all duration-300;
+}
